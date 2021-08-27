@@ -10,7 +10,7 @@ import { HttpService } from 'src/app/services/http.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  public sort: string | undefined;
+  public sort = '';
   public games: Array<Game> | undefined;
   private routeSub: Subscription | undefined;
   private gameSub: Subscription | undefined;
